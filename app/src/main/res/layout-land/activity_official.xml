@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/addressTextView2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@color/purple"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            tools:text="Address" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/darkpurple"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="88dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextView2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="195dp"
+            android:layout_height="196dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="goImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toEndOf="@+id/partyTV"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextView2"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/officeTV"
+            android:layout_width="441dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nameTV"
+            app:layout_constraintStart_toStartOf="@+id/nameTV"
+            app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+        <TextView
+            android:id="@+id/partyTV"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="353dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/addressTV"
+            app:layout_constraintTop_toTopOf="@+id/addressTextView2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="168dp"
+            android:text="Address:"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/addressTV"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textview4"
+            app:layout_constraintTop_toBottomOf="@+id/officeTV" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Phone:"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressTV" />
+
+        <TextView
+            android:id="@+id/phoneTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/addressTV" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Email:"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneTV" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="212dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/phoneTV" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Website:"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/websiteTV"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/partyLogo"
+            android:layout_width="55dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="2dp"
+            android:onClick="partyLogoClicked"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/twitterImage"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="40dp"
+            android:onClick="twitterClicked"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/addressTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/youtubeImage"
+            app:layout_constraintTop_toTopOf="@+id/websiteTV"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/facebookImage"
+            android:layout_width="47dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="44dp"
+            android:onClick="facebookClicked"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/addressTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/emailTV"
+            app:layout_constraintTop_toTopOf="@+id/websiteTV"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/youtubeImage"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="124dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/addressTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/facebookImage"
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            app:srcCompat="@drawable/youtube" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
